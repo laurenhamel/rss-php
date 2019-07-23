@@ -19,7 +19,7 @@
 		"ext-simplexml": "*"
 	},
 	"autoload": {
-		"prs4": {
+		"prs-4": {
 			"Dg\\": "src/"
 		}
 	}
