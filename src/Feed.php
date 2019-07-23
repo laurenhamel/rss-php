@@ -190,7 +190,7 @@ class Feed
 			throw new FeedException('Cannot load feed.');
 		}
 
-		return new SimpleXMLElement($data, LIBXML_NOWARNING | LIBXML_NOERROR);
+		return new \SimpleXMLElement($data, LIBXML_NOWARNING | LIBXML_NOERROR);
 	}
 
 
