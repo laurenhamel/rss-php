@@ -68,7 +68,7 @@ class Feed
 	}
 
 
-	private static function fromRss(SimpleXMLElement $xml)
+	private static function fromRss(\SimpleXMLElement $xml)
 	{
 		if (!$xml->channel) {
 			throw new FeedException('Invalid feed.');
@@ -190,7 +190,7 @@ class Feed
 			throw new FeedException('Cannot load feed.');
 		}
 
-		return new SimpleXMLElement($data, LIBXML_NOWARNING | LIBXML_NOERROR);
+		return new \SimpleXMLElement($data, LIBXML_NOWARNING | LIBXML_NOERROR);
 	}
 
 
